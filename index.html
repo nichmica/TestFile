@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/zepto.min.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/jquery_drag_drop.js" type="text/javascript"></script>
+     <script src="js/widgets.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="droppableeast">
+        <span>L</span>
+    </div>
+    <div id="droppablewest">
+        <span>R</span>
+    </div>
+    <div class="page">
+        <header>
+                <span>Header</span>
+            </header>
+        <article class="group" id="article">
+                <span>Article</span>
+            </article>
+        <section id="sidebar" class="group">
+                <span>Twitter Tweets</span>          
+           
+    <script type="text/javascript">
+        new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 5,
+            interval: 30000,
+            width: 'auto',
+            height: 200,
+
+            theme: {
+                shell: {
+                    background: '#333333',
+                    color: '#faf5fa'
+                },
+                tweets: {
+                    background: '#000000',
+                    color: '#a8a1a8',
+                    links: '#2b4dd6'
+                }
+            },
+            features: {
+                scrollbar: true,
+                loop: true,
+                live: true,
+                hashtags: true,
+                timestamp: true,
+                avatars: true,
+                behavior: 'all'
+            }
+        }).render().setUser('seaofclouds').start();
+    </script>
+            </section>
+        <div class="clear">
+        </div>
+        <footer>
+                <span>Footer</span>
+            </footer>
+    </div>
+</body>
+</html>

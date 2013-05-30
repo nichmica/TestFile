@@ -1,0 +1,97 @@
+
+/* 
+    Document   : style
+    Created on : Feb 25, 2013, 10:38:04 AM
+    Author     : mika2
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html,
+body {
+    background-color: #3d79d0;
+    font-family: ubuntu;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    height: 100%;
+}
+
+.page {
+    max-width: 980px;
+    width: 980px;
+    margin: auto;
+}
+
+footer,
+header {
+    margin: 1em 0em;
+    height: 200px;
+    width: 100%;
+}
+
+header, footer, article, #sidebar {
+    border: 2px dashed white;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+article {
+    float: left;
+    width: 60%;
+}
+
+#sidebar {
+    width: 35%;
+    float: right;
+}
+
+#sidebar > img {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+
+
+#droppableeast {
+    position: absolute;
+     top:50%;
+    left:20%;
+    width: 95px;
+    height: 115px;
+    background: black;
+    border-style:inset;
+    border-color: black;
+    text-align: center;
+    box-shadow: 0px 0px 20px #999; /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+	border-radius:3px 3px 3px 3px;
+        -moz-border-radius: 3px; /* Firefox */
+        -webkit-border-radius: 3px; /* Safari, Chrome */
+        text-shadow: 2px 2px 2px #0b0b0f;
+        
+     
+}
+#droppablewest {
+    position: absolute;
+    top:50%;
+    left:70%;
+    width: 95px;
+    height: 115px;
+    background: black;
+    border-style:dashed;
+    border-color: black;
+    box-shadow: 0px 0px 20px #999; /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+	border-radius:3px 3px 3px 3px;
+        -moz-border-radius: 3px; /* Firefox */
+        -webkit-border-radius: 3px; /* Safari, Chrome */
+    text-align: center;
+        text-shadow: 2px 2px 2px #0b0b0f;
+      
+        
+     
+}

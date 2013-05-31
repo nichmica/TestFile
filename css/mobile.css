@@ -1,0 +1,58 @@
+
+/* 
+    Document   : style
+    Created on : Feb 25, 2013, 10:38:04 AM
+    Author     : mika2
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html,
+body {
+    background-color: #3d79d0;
+    font-family: ubuntu;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    height: 100%;
+}
+
+.page {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+footer,
+header {
+    margin: 1em 0em;
+    height: 70%;
+    width: 100%;
+}
+
+header, footer, article, #sidebar {
+    border: 2px dashed white;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+article {
+    width: 100%;
+	clear: both;
+	height: auto;
+}
+
+#sidebar {
+    width: 100%;
+     height: auto;
+	clear: both;
+}
+
+#sidebar > img {
+    width: 100%;
+    height: 100%;
+    margin: 1em 0;
+}
+
+
+

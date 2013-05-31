@@ -2,16 +2,51 @@
 <html>
 <head>
     <title></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link id="css" rel="stylesheet" href="css/style.css" />
     <script src="js/zepto.min.js" type="text/javascript"></script>
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/jquery_drag_drop.js" type="text/javascript"></script>
      <script src="js/widgets.js" type="text/javascript"></script>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+   <!-- <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />-->
 </head>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(setWindow);
+        $(window).bind("resize", setWindow);
+
+        function setWindow() {
+            var newWindowWidth = $(window).width();
+            var newWindowH = $(window).height();
+
+            //alert("ss:" + $(window).width());
+            // Mobile 
+            if (newWindowWidth < 910) {
+
+                document.getElementById('css').href = 'css/mobile.css';
+            }
+
+            //Desktop
+            else if (newWindowWidth > 1100) {
+
+                document.getElementById('css').href = 'css/style.css';
+            }
+            //Tablet
+            else if (newWindowWidth > 910 && newWindowWidth < 1100) {
+
+                document.getElementById('css').href = 'css/tablet.css';
+
+            }
+
+        }
+    });
+</script>
+   
+
 <body>
     <div id="droppableeast">
         <span>L</span>
@@ -26,6 +61,8 @@
         <article class="group" id="article">
                 <span>Article</span>
             </article>
+
+            <div>
         <section id="sidebar" class="group">
                 <span>Twitter Tweets</span>          
            
@@ -61,6 +98,8 @@
         }).render().setUser('seaofclouds').start();
     </script>
             </section>
+
+            </div>
         <div class="clear">
         </div>
         <footer>
